@@ -1,8 +1,5 @@
 module Memorable
-  def initialize
-    self.class.all << self
-  end
-  
+
   def reset_all
     self.all.clear
   end
@@ -10,4 +7,9 @@ module Memorable
   def count
     self.all.count
   end
+  
+  def initialize
+    self.class.all << self
+  end
+  
 end
